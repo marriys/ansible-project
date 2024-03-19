@@ -277,3 +277,13 @@ vi register.yml
 rm register.yml 
 vi register.yml
 ansible-playbook register.yml
+sudo yum instal git
+sudo yum install git
+clear
+git init
+git add .
+git commi -m "first commit"
+git commit -m "first commit"
+git remote add origin https://github.com/marriys/ansible-project.git
+git push -u origin main
+git push -u origin master
