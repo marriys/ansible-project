@@ -1,0 +1,11 @@
+- hosts: webserver[0]
+  tasks:
+    - name: check files exists
+      stat:
+        path: /var/www/index.html
+      register: info
+
+    - name: show info details
+      debug:
+        msg: "{{ info }}"
+
